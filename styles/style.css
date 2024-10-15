@@ -1,9 +1,11 @@
 .header {
   margin: 92px 50px;
+  height: 105px;
   background-color: #fff;
   color: #000;
   display: flex;
   flex-direction: row;
+  position: relative;
   justify-content: space-between;
   align-items: center;
 }
@@ -12,6 +14,7 @@
   display: flex;
   gap: 31px;
 }
+
 
 .header__menu-item {
   font-size: 18px;
@@ -33,10 +36,15 @@
 }
 
 .header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 148px;
 }
 
 .contact-info {
+  /* align-self: flex-end; */
   max-width: 240px;
   font-size: 18px;
   font-style: normal;
@@ -110,7 +118,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 78px;
+  gap: 79px;
 }
 
 .hero__description-text {
@@ -133,7 +141,7 @@
 .auction__lots {
   display: flex;
   flex-direction: column;
-  margin: 0 50px 180px;
+  margin: 0 24px 180px;
   /* gap: 25px; */
 }
 
@@ -145,16 +153,14 @@
 }
 
 .auction-lots__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 25px;
   list-style: none;
 }
 
 .auction-lots__item {
   flex-grow: 1;
-  width: 430px;
-  min-height: 450px;
 }
 
 .lot-card__link {
@@ -169,7 +175,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 50px 40px;
+  padding: 51px 40px 48px;
   color: #fff;
   background-color: #000;
   background-position: center;
@@ -214,16 +220,18 @@
 }
 
 .about-auction {
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   gap: 25px;
-  margin: 0 50px 180px;
+  margin: 0 24px 180px;
 }
 
 .about-auction__logo {
   width: 240px;
   height: 240px;
   padding: 63px 46px;
-  margin: 0 95px;
+  margin: 0px auto;
   border-radius: 50%;
   background-color: #000;
 }
@@ -255,7 +263,7 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  margin: 0 50px 90px;
+  margin: 0 50px 88px;
 }
 
 .footer__links {
