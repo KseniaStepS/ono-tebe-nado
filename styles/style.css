@@ -1,1 +1,293 @@
-/* место для вашего кода */
+.header {
+  margin: 92px 50px;
+  height: 105px;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu-list {
+  display: flex;
+  gap: 31px;
+}
+
+
+.header__menu-item {
+  font-size: 18px;
+  list-style: circle;
+}
+
+.header__menu-item--no-bullet {
+  list-style: none;
+}
+
+.header__nav-link {
+  border-bottom: 1px solid;
+  text-decoration: none;
+  letter-spacing: 0.02rem;
+}
+
+.header__menu-link--active {
+  border-bottom: none;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 148px;
+}
+
+.contact-info {
+  /* align-self: flex-end; */
+  max-width: 240px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: 0.02rem;
+}
+
+.header__contact-info {
+  justify-self: end;
+}
+
+.contact-info a {
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 135px;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/cover.jpg);
+  color: #fff;
+  padding: 165px 50px 50px 50px;
+  margin: 0 0 180px;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.hero__title {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 100px;
+  line-height: 1.15;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.text-align {
+  display: block;
+  margin-top: 20px;
+  line-height: 1;
+}
+
+.text-align--center {
+  text-align: center;
+}
+
+.text-align--right {
+  text-align: right;
+}
+
+.letter-spacing--extended {
+  letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+  letter-spacing: initial;
+}
+
+.hero__description {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 79px;
+}
+
+.hero__description-text {
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  word-spacing: 18px;
+}
+
+.btn-bid {
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+
+.auction__lots {
+  display: flex;
+  flex-direction: column;
+  margin: 0 24px 180px;
+  /* gap: 25px; */
+}
+
+.auction-lots__title {
+  margin: 0 0 27px 40px;
+  font-size: 40px;
+  line-height: 47px;
+  text-transform: uppercase;
+}
+
+.auction-lots__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  list-style: none;
+}
+
+.auction-lots__item {
+  flex-grow: 1;
+}
+
+.lot-card__link {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+}
+
+.lot-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 51px 40px 48px;
+  color: #fff;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+}
+
+.lot-card__title {
+  z-index: 1;
+  font-size: 22px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-underline-offset: 3.5px;
+  line-height: 1.2;
+}
+
+.lot-card__description {
+  z-index: 1;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.lot-card--film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.lot-card--book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.lot-card--picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.auction-lots__load-more {
+  margin: 30px 0 0 40px;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  font-size: 20px;
+}
+
+.about-auction {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 25px;
+  margin: 0 24px 180px;
+}
+
+.about-auction__logo {
+  width: 240px;
+  height: 240px;
+  padding: 63px 46px;
+  margin: 0px auto;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.about-auction__logo-img {
+  width: 148px;
+  height: 114px;
+}
+
+.about-auction__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-auction__title {
+  margin: 100px 0;
+  line-height: 1.2;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about-auction__description {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 20px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  margin: 0 50px 88px;
+}
+
+.footer__links {
+  font-size: 18px;
+  text-align: center;
+  list-style: none;
+}
+
+.footer__nav-link {
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
+
+.footer__link--active {
+  border-bottom: none;
+}
+
+.footer__social-links {
+  display: flex;
+  justify-self: end;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+}
